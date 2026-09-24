@@ -1,0 +1,722 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What We Do — Boreal Plating</title>
+    <meta
+      name="description"
+      content="Explore Boreal Plating industrial capabilities in manufacturing, machining and surface treatment."
+    />
+    <meta name="theme-color" content="#101a2b" />
+    <link
+      rel="alternate"
+      hreflang="pt-BR"
+      href="https://www.borealnet.com.br/o-que-fazemos"
+    />
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://www.borealnet.com.br/en/o-que-fazemos"
+    />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://www.borealnet.com.br/o-que-fazemos"
+    />
+    <link
+      rel="canonical"
+      href="https://www.borealnet.com.br/en/o-que-fazemos"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Boreal Plating" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="What We Do — Boreal Plating" />
+    <meta
+      property="og:description"
+      content="Explore Boreal Plating industrial capabilities in manufacturing, machining and surface treatment."
+    />
+    <meta
+      property="og:url"
+      content="https://www.borealnet.com.br/en/o-que-fazemos"
+    />
+    <meta
+      property="og:image"
+      content="https://www.borealnet.com.br/assets/images/peca-plating-cromado.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="../assets/images/logo.png" type="image/png" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <style>
+      .process-section {
+        background: #f5faff;
+      }
+      .process-intro {
+        max-width: 850px;
+        margin-bottom: 48px;
+      }
+      .process-intro .section-title {
+        margin-bottom: 18px;
+      }
+      .process-grid-new {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 18px;
+      }
+      .process-card-new {
+        position: relative;
+        min-height: 235px;
+        padding: 30px 28px;
+        background: #fff;
+        border: 1px solid #d6e9f3;
+        border-top: 3px solid #47a8df;
+        overflow: hidden;
+        transition:
+          transform 0.35s ease,
+          box-shadow 0.35s ease,
+          background-color 0.35s ease,
+          border-color 0.35s ease;
+      }
+      .process-card-new::after {
+        content: "";
+        position: absolute;
+        width: 90px;
+        height: 90px;
+        right: -45px;
+        bottom: -45px;
+        border-radius: 50%;
+        background: rgba(71, 168, 223, 0.08);
+        transition: transform 0.4s ease;
+      }
+      .process-card-new:hover {
+        transform: translateY(-9px);
+        background: #e2f1f9;
+        border-color: #47a8df;
+        box-shadow: 0 18px 35px rgba(16, 24, 39, 0.1);
+      }
+      .process-card-new:hover::after {
+        transform: scale(1.8);
+      }
+      .process-card-new .num {
+        display: block;
+        margin-bottom: 35px;
+        color: #2f4f9e;
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+      }
+      .process-card-new h3 {
+        margin: 0 0 12px;
+        color: #101827;
+        font-size: 1.25rem;
+      }
+      .process-card-new p {
+        margin: 0;
+        color: #53677d;
+        line-height: 1.65;
+        font-size: 0.96rem;
+      }
+      .plating-showcase {
+        background: #101827;
+        color: #fff;
+        padding: 0;
+      }
+      .plating-showcase-inner {
+        display: grid;
+        grid-template-columns: 1.08fr 0.92fr;
+        min-height: 650px;
+      }
+      .plating-image {
+        position: relative;
+        min-height: 650px;
+        overflow: hidden;
+      }
+      .plating-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.7s ease;
+      }
+      .plating-showcase:hover .plating-image img {
+        transform: scale(1.025);
+      }
+      .plating-copy {
+        padding: 78px 65px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .plating-copy .kicker {
+        color: #47a8df;
+      }
+      .plating-copy .section-title {
+        color: #fff;
+        max-width: 620px;
+        margin-bottom: 28px;
+      }
+      .plating-copy .section-lead {
+        color: #d0dce8;
+        margin-bottom: 35px;
+      }
+      .finish-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border-top: 1px solid rgba(255, 255, 255, 0.65);
+        border-left: 1px solid rgba(255, 255, 255, 0.65);
+      }
+      .finish-item {
+        padding: 18px 20px;
+        border-right: 1px solid rgba(255, 255, 255, 0.65);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.65);
+        color: #f4f8fb;
+        font-size: 0.98rem;
+        transition: background-color 0.25s ease;
+      }
+      .finish-item:hover {
+        background: rgba(71, 168, 223, 0.1);
+      }
+      .finishes-section {
+        background: #fff;
+      }
+      .finishes-layout {
+        display: grid;
+        grid-template-columns: 0.9fr 1.1fr;
+        min-height: 560px;
+        align-items: center;
+        gap: 70px;
+      }
+      .finishes-copy {
+        max-width: 560px;
+      }
+      .finishes-copy .section-title {
+        margin-bottom: 22px;
+      }
+      .finishes-copy .section-lead {
+        margin-bottom: 28px;
+      }
+      .finishes-image {
+        height: 520px;
+        overflow: hidden;
+      }
+      .finishes-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+      .integration-section {
+        background: #eef6fa;
+      }
+      .integration-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0;
+        margin-top: 45px;
+        border-top: 1px solid #cbdce6;
+        border-left: 1px solid #cbdce6;
+      }
+      .integration-card {
+        padding: 34px 30px;
+        border-right: 1px solid #cbdce6;
+        border-bottom: 1px solid #cbdce6;
+        background: rgba(255, 255, 255, 0.35);
+        transition:
+          transform 0.3s ease,
+          background-color 0.3s ease;
+      }
+      .integration-card:hover {
+        transform: translateY(-5px);
+        background: #fff;
+      }
+      .integration-card span {
+        display: block;
+        margin-bottom: 28px;
+        color: #2f4f9e;
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+      }
+      .integration-card h3 {
+        margin: 0 0 12px;
+        color: #101827;
+      }
+      .integration-card p {
+        margin: 0;
+        color: #5c7085;
+        line-height: 1.6;
+      }
+      @media (max-width: 1100px) {
+        .process-grid-new {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .plating-showcase-inner {
+          grid-template-columns: 1fr;
+        }
+        .plating-image {
+          min-height: 460px;
+        }
+        .finishes-layout {
+          grid-template-columns: 1fr;
+        }
+        .finishes-copy {
+          max-width: 800px;
+        }
+        .finishes-image {
+          height: 450px;
+        }
+      }
+      @media (max-width: 700px) {
+        .process-grid-new {
+          grid-template-columns: 1fr;
+        }
+        .process-card-new {
+          min-height: auto;
+        }
+        .plating-image {
+          min-height: 330px;
+        }
+        .plating-copy {
+          padding: 55px 25px;
+        }
+        .finish-grid {
+          grid-template-columns: 1fr;
+        }
+        .finishes-image {
+          height: 340px;
+        }
+        .integration-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .process-card-new,
+        .process-card-new::after,
+        .plating-image img,
+        .integration-card {
+          transition: none;
+        }
+      }
+    </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Boreal Plating",
+        "url": "https://www.borealnet.com.br",
+        "logo": "https://www.borealnet.com.br/assets/images/logo.png",
+        "email": "contato@borealnet.com.br",
+        "telephone": "+55 (47) 3419-9393",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rua Tuiuti, 3835",
+          "addressLocality": "Joinville",
+          "addressRegion": "SC",
+          "postalCode": "89226-001",
+          "addressCountry": "BR"
+        },
+        "sameAs": [
+          "https://www.instagram.com/boreal_plating/",
+          "https://www.linkedin.com/company/boreal-pecas-industriais/"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <div class="header-inner container">
+        <a class="brand" href="/en/" aria-label="Boreal Plating — Home">
+          <img src="../assets/images/logo.png" alt="Boreal Plating" />
+        </a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="site-menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav id="site-menu" class="site-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="/en/">Home</a></li>
+            <li><a href="/en/quem-somos">Who We Are</a></li>
+            <li>
+              <a class="active" href="/en/o-que-fazemos" aria-current="page"
+                >What We Do</a
+              >
+            </li>
+            <li><a href="/en/ped">R&D</a></li>
+            <li><a href="/en/esg">ESG</a></li>
+            <li><a href="/en/certificacoes">Certifications</a></li>
+            <li><a href="/en/fornecedores">Suppliers</a></li>
+            <li><a href="/en/contato">Contact</a></li>
+            <li><a href="/en/carreiras">Careers</a></li>
+          </ul>
+          <div class="nav-tools">
+            <div class="language" aria-label="Language">
+              <a href="/o-que-fazemos" class="">PT</a><span>/</span
+              ><a href="/en/o-que-fazemos" class="active">EN</a>
+            </div>
+            <a
+              class="social"
+              href="https://www.instagram.com/boreal_plating/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram"
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                <circle cx="12" cy="12" r="4"></circle>
+                <circle cx="17.5" cy="6.5" r="1"></circle></svg
+            ></a>
+            <a
+              class="social"
+              href="https://www.linkedin.com/company/boreal-pecas-industriais/"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn"
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M6.5 8.5V18M6.5 6.2v.1M11 18v-5.2a3 3 0 0 1 6 0V18M11 11v7"
+                ></path></svg
+            ></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section
+        class="inner-hero"
+        style="
+          --hero-image: url(&quot;../assets/images/peca-plating-cromado.jpg&quot;);
+          background-image:
+            linear-gradient(
+              90deg,
+              rgba(9, 19, 34, 0.82),
+              rgba(9, 19, 34, 0.48)
+            ),
+            url(&quot;../assets/images/peca-plating-cromado.jpg&quot;);
+        "
+      >
+        <div class="hero-overlay"></div>
+        <div class="container inner-hero-content">
+          <p class="eyebrow">What We Do</p>
+          <h1>Integrated industrial capability.</h1>
+          <p class="hero-subtitle">
+            From engineering to finishing, with process control.
+          </p>
+        </div>
+      </section>
+
+      <section class="section process-section">
+        <div class="container">
+          <div class="process-intro reveal">
+            <p class="kicker">Production capability</p>
+            <h2 class="section-title">Integrated processes at every stage.</h2>
+            <p class="section-lead">
+              The integration of manufacturing, machining, surface treatment and
+              finishing allows greater technical control throughout the
+              production process.
+            </p>
+          </div>
+          <div class="process-grid-new">
+            <article class="process-card-new reveal">
+              <span class="num">01</span>
+              <h3>Engineering</h3>
+              <p>
+                Definition and development of the process according to technical
+                requirements.
+              </p>
+            </article>
+            <article class="process-card-new reveal">
+              <span class="num">02</span>
+              <h3>Manufacturing / Injection</h3>
+              <p>Production of metal components and technical polymer parts.</p>
+            </article>
+            <article class="process-card-new reveal">
+              <span class="num">03</span>
+              <h3>Machining</h3>
+              <p>
+                Production of parts and components with dimensional control in
+                turning and milling.
+              </p>
+            </article>
+            <article class="process-card-new reveal">
+              <span class="num">04</span>
+              <h3>Surface preparation</h3>
+              <p>Preparation of parts for treatment and finishing processes.</p>
+            </article>
+            <article class="process-card-new reveal">
+              <span class="num">05</span>
+              <h3>Treatment and coating</h3>
+              <p>
+                Plating and surface treatment processes according to
+                specification.
+              </p>
+            </article>
+            <article class="process-card-new reveal">
+              <span class="num">06</span>
+              <h3>Finishing</h3>
+              <p>
+                Application of finishing processes and complementary steps
+                according to the project.
+              </p>
+            </article>
+            <article class="process-card-new reveal">
+              <span class="num">07</span>
+              <h3>Final control</h3>
+              <p>
+                Inspection and monitoring of the requirements defined for each
+                delivery.
+              </p>
+            </article>
+            <article class="process-card-new reveal">
+              <span class="num">08</span>
+              <h3>Dispatch</h3>
+              <p>
+                Preparation and shipment of components according to customer
+                specifications.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="plating-showcase">
+        <div class="plating-showcase-inner">
+          <div class="plating-image">
+            <img
+              src="../assets/images/amostras-plating.jpg"
+              alt="Plating colors and finishes samples from Boreal"
+              loading="lazy"
+            />
+          </div>
+          <div class="plating-copy reveal">
+            <p class="kicker">Plating</p>
+            <h2 class="section-title">Variety of colors and finishes.</h2>
+            <p class="section-lead">
+              Different coating and finishing options can be applied according
+              to the specification and requirements of each project.
+            </p>
+            <div class="finish-grid">
+              <div class="finish-item">14k Gold</div>
+              <div class="finish-item">24k Gold</div>
+              <div class="finish-item">Almond Gold</div>
+              <div class="finish-item">Antique Nickel</div>
+              <div class="finish-item">Bronze Dark Aged Antique</div>
+              <div class="finish-item">Champagne Gold</div>
+              <div class="finish-item">Chrome</div>
+              <div class="finish-item">Copper</div>
+              <div class="finish-item">Crescent Gold</div>
+              <div class="finish-item">Nickel</div>
+              <div class="finish-item">Platinum</div>
+              <div class="finish-item">Rose Gold</div>
+              <div class="finish-item">Silver</div>
+              <div class="finish-item">Smoked Nickel</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section finishes-section">
+        <div class="container">
+          <div class="finishes-layout">
+            <div class="finishes-copy reveal">
+              <p class="kicker">Anodizing and coatings</p>
+              <h2 class="section-title">
+                Finishes for function and aesthetics.
+              </h2>
+              <p class="section-lead">
+                Anodizing in different tones, as well as varnishes and
+                industrial painting, according to the specification of each
+                application.
+              </p>
+              <ul class="quality-list">
+                <li>
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m5 12 4 4L19 6"></path></svg
+                  ><span>Anodizing</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m5 12 4 4L19 6"></path></svg
+                  ><span>Varnishes</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m5 12 4 4L19 6"></path></svg
+                  ><span>Industrial painting</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m5 12 4 4L19 6"></path></svg
+                  ><span>Finishes according to specification</span>
+                </li>
+              </ul>
+            </div>
+            <div class="finishes-image reveal">
+              <img
+                src="../assets/images/peca-plating-cromado.jpg"
+                alt="Metal part with surface finish"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section integration-section">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="kicker">Industrial structure</p>
+            <h2 class="section-title">
+              Different processes within the same production chain.
+            </h2>
+            <p class="section-lead">
+              Boreal brings together complementary capabilities in
+              manufacturing, machining, surface treatment and finishing to meet
+              different industrial needs.
+            </p>
+          </div>
+          <div class="integration-grid">
+            <article class="integration-card reveal">
+              <span>01</span>
+              <h3>Surface treatment</h3>
+              <p>
+                Plating and treatment processes for protection, finishing and
+                technical requirements of metal parts.
+              </p>
+            </article>
+            <article class="integration-card reveal">
+              <span>02</span>
+              <h3>Precision machining</h3>
+              <p>
+                Production of technical parts and metal components with
+                dimensional control.
+              </p>
+            </article>
+            <article class="integration-card reveal">
+              <span>03</span>
+              <h3>Thermoplastic injection</h3>
+              <p>
+                Production of technical plastic components for integration into
+                industrial assemblies.
+              </p>
+            </article>
+            <article class="integration-card reveal">
+              <span>04</span>
+              <h3>Metal manufacturing</h3>
+              <p>
+                Manufacturing of components according to specifications,
+                including cutting, bending and welding.
+              </p>
+            </article>
+            <article class="integration-card reveal">
+              <span>05</span>
+              <h3>Industrial finishes</h3>
+              <p>
+                Complementary finishing processes such as varnishing, painting
+                and surface preparation.
+              </p>
+            </article>
+            <article class="integration-card reveal">
+              <span>06</span>
+              <h3>Integrated processes</h3>
+              <p>
+                Combination of different production stages according to the
+                requirements of each project.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div class="container cta-inner">
+          <div>
+            <h2>Shall we evaluate your project?</h2>
+            <p>Describe the component, finish or process you need.</p>
+          </div>
+          <a class="btn btn-primary" href="/en/contato"
+            >Talk to sales
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h13M13 6l6 6-6 6"></path></svg
+          ></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <div class="footer-brand">
+          <a href="/en/"
+            ><img src="../assets/images/logo.png" alt="Boreal Plating"
+          /></a>
+          <p>
+            Industrial solutions in surface treatment, precision machining and
+            component manufacturing.
+          </p>
+          <div class="footer-social">
+            <a
+              href="https://www.instagram.com/boreal_plating/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram"
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                <circle cx="12" cy="12" r="4"></circle>
+                <circle cx="17.5" cy="6.5" r="1"></circle></svg
+            ></a>
+            <a
+              href="https://www.linkedin.com/company/boreal-pecas-industriais/"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn"
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M6.5 8.5V18M6.5 6.2v.1M11 18v-5.2a3 3 0 0 1 6 0V18M11 11v7"
+                ></path></svg
+            ></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="/en/quem-somos">Who We Are</a></li>
+            <li><a href="/en/o-que-fazemos">What We Do</a></li>
+            <li><a href="/en/ped">R&D</a></li>
+            <li><a href="/en/esg">ESG</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Standards</h3>
+          <ul>
+            <li><a href="/en/certificacoes">Certifications</a></li>
+            <li><a href="/en/fornecedores">Suppliers</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="/en/contato">Contact</a></li>
+            <li><a href="/en/carreiras">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-contact">
+          <h3>Joinville / SC</h3>
+          <p>
+            Rua Tuiuti, 3835<br />Aventureiro<br />Joinville — SC<br />CEP
+            89226-001
+          </p>
+          <a href="mailto:contato@borealnet.com.br">contato@borealnet.com.br</a
+          ><a href="tel:+554734199393">+55 (47) 3419-9393</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 Boreal Plating · All rights reserved.</span
+        ><span>Joinville, Santa Catarina, Brasil</span>
+      </div>
+    </footer>
+    <script src="../assets/js/main.js" defer></script>
+  </body>
+</html>

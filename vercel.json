@@ -1,0 +1,201 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/about",
+      "destination": "/quem-somos",
+      "permanent": true
+    },
+    {
+      "source": "/about.html",
+      "destination": "/quem-somos",
+      "permanent": true
+    },
+    {
+      "source": "/services",
+      "destination": "/o-que-fazemos",
+      "permanent": true
+    },
+    {
+      "source": "/services.html",
+      "destination": "/o-que-fazemos",
+      "permanent": true
+    },
+    {
+      "source": "/research-development",
+      "destination": "/ped",
+      "permanent": true
+    },
+    {
+      "source": "/research-development.html",
+      "destination": "/ped",
+      "permanent": true
+    },
+    {
+      "source": "/ped.html",
+      "destination": "/ped",
+      "permanent": true
+    },
+    {
+      "source": "/esg.html",
+      "destination": "/esg",
+      "permanent": true
+    },
+    {
+      "source": "/certifications",
+      "destination": "/certificacoes",
+      "permanent": true
+    },
+    {
+      "source": "/certifications.html",
+      "destination": "/certificacoes",
+      "permanent": true
+    },
+    {
+      "source": "/selos",
+      "destination": "/certificacoes",
+      "permanent": true
+    },
+    {
+      "source": "/selos.html",
+      "destination": "/certificacoes",
+      "permanent": true
+    },
+    {
+      "source": "/suppliers",
+      "destination": "/fornecedores",
+      "permanent": true
+    },
+    {
+      "source": "/suppliers.html",
+      "destination": "/fornecedores",
+      "permanent": true
+    },
+    {
+      "source": "/contato-comercial",
+      "destination": "/contato",
+      "permanent": true
+    },
+    {
+      "source": "/contato-comercial.html",
+      "destination": "/contato",
+      "permanent": true
+    },
+    {
+      "source": "/contato-fornecedores",
+      "destination": "/fornecedores",
+      "permanent": true
+    },
+    {
+      "source": "/contato-fornecedores.html",
+      "destination": "/fornecedores",
+      "permanent": true
+    },
+    {
+      "source": "/contato-trabalhe",
+      "destination": "/carreiras",
+      "permanent": true
+    },
+    {
+      "source": "/contato-trabalhe.html",
+      "destination": "/carreiras",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/contato",
+      "permanent": true
+    },
+    {
+      "source": "/contact.html",
+      "destination": "/contato",
+      "permanent": true
+    },
+    {
+      "source": "/careers",
+      "destination": "/carreiras",
+      "permanent": true
+    },
+    {
+      "source": "/careers.html",
+      "destination": "/carreiras",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/en/about",
+      "destination": "/en/quem-somos",
+      "permanent": true
+    },
+    {
+      "source": "/en/about.html",
+      "destination": "/en/quem-somos",
+      "permanent": true
+    },
+    {
+      "source": "/en/services",
+      "destination": "/en/o-que-fazemos",
+      "permanent": true
+    },
+    {
+      "source": "/en/services.html",
+      "destination": "/en/o-que-fazemos",
+      "permanent": true
+    },
+    {
+      "source": "/en/research-development",
+      "destination": "/en/ped",
+      "permanent": true
+    },
+    {
+      "source": "/en/research-development.html",
+      "destination": "/en/ped",
+      "permanent": true
+    },
+    {
+      "source": "/en/certifications",
+      "destination": "/en/certificacoes",
+      "permanent": true
+    },
+    {
+      "source": "/en/certifications.html",
+      "destination": "/en/certificacoes",
+      "permanent": true
+    },
+    {
+      "source": "/en/suppliers",
+      "destination": "/en/fornecedores",
+      "permanent": true
+    },
+    {
+      "source": "/en/suppliers.html",
+      "destination": "/en/fornecedores",
+      "permanent": true
+    },
+    {
+      "source": "/en/contact",
+      "destination": "/en/contato",
+      "permanent": true
+    },
+    {
+      "source": "/en/contact.html",
+      "destination": "/en/contato",
+      "permanent": true
+    },
+    {
+      "source": "/en/careers",
+      "destination": "/en/carreiras",
+      "permanent": true
+    },
+    {
+      "source": "/en/careers.html",
+      "destination": "/en/carreiras",
+      "permanent": true
+    }
+  ]
+}
