@@ -59,29 +59,52 @@
     syncHeader();
     window.addEventListener("scroll", syncHeader, { passive: true });
 
-    const closeMenu = () => {
-      nav?.classList.remove("open");
-      toggle?.setAttribute("aria-expanded", "false");
-      document.body.classList.remove("menu-open");
+    if (!toggle || !nav) return;
+
+    const isEnglish = document.documentElement.lang === "en";
+    const labels = isEnglish
+      ? { open: "Open menu", close: "Close menu" }
+      : { open: "Abrir menu", close: "Fechar menu" };
+
+    const setMenuState = (isOpen) => {
+      nav.classList.toggle("open", isOpen);
+      toggle.setAttribute("aria-expanded", String(isOpen));
+      toggle.setAttribute("aria-label", isOpen ? labels.close : labels.open);
+      document.body.classList.toggle("menu-open", isOpen);
     };
 
-    toggle?.addEventListener("click", () => {
-      const isOpen = nav?.classList.toggle("open");
-      toggle.setAttribute("aria-expanded", String(Boolean(isOpen)));
+    const closeMenu = () => setMenuState(false);
+
+    setMenuState(false);
+
+    toggle.addEventListener("click", () => {
+      setMenuState(!nav.classList.contains("open"));
     });
 
-    nav?.querySelectorAll("a").forEach((link) => {
+    nav.querySelectorAll("a").forEach((link) => {
       link.addEventListener("click", closeMenu);
     });
 
     document.addEventListener("click", (event) => {
       if (
-        nav?.classList.contains("open") &&
+        nav.classList.contains("open") &&
         !nav.contains(event.target) &&
         !toggle.contains(event.target)
       ) {
         closeMenu();
       }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && nav.classList.contains("open")) {
+        closeMenu();
+        toggle.focus();
+      }
+    });
+
+    // Ao voltar para o layout desktop, garante que o menu mobile não fique aberto.
+    window.matchMedia("(min-width: 901px)").addEventListener("change", (e) => {
+      if (e.matches) closeMenu();
     });
   };
 
@@ -152,23 +175,13 @@
       form.addEventListener("submit", (event) => {
         event.preventDefault();
 
+        // Campos obrigatórios (incluindo o consentimento LGPD) usam a validação nativa.
         if (!form.reportValidity()) {
           return;
         }
 
-        const consent = form.querySelector('input[name="consent"]');
-        if (consent && !consent.checked) {
-          consent.focus();
-          consent.setCustomValidity(
-            "É necessário consentir com o tratamento dos dados antes do envio.",
-          );
-          consent.reportValidity();
-          consent.setCustomValidity("");
-          return;
-        }
-
         const data = new FormData(form);
-        location.href = buildMailtoUrl(form, data);
+        window.location.href = buildMailtoUrl(form, data);
       });
     });
   };

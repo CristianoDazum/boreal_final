@@ -1,95 +1,49 @@
 <!doctype html>
 <html lang="pt-BR">
-<head><meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>O Que Fazemos — Boreal Plating</title>
-<meta name="description" content="Conheça as capacidades industriais da Boreal Plating em fabricação, usinagem e tratamento de superfícies.">
-<meta name="theme-color" content="#101a2b">
-<link rel="alternate" hreflang="pt-BR" href="https://www.borealnet.com.br/o-que-fazemos">
-<link rel="alternate" hreflang="en" href="https://www.borealnet.com.br/en/o-que-fazemos">
-<link rel="alternate" hreflang="x-default" href="https://www.borealnet.com.br/o-que-fazemos">
-<link rel="canonical" href="https://www.borealnet.com.br/o-que-fazemos">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Boreal Plating">
-<meta property="og:locale" content="pt_BR">
-<meta property="og:title" content="O Que Fazemos — Boreal Plating">
-<meta property="og:description" content="Conheça as capacidades industriais da Boreal Plating em fabricação, usinagem e tratamento de superfícies.">
-<meta property="og:url" content="https://www.borealnet.com.br/o-que-fazemos">
-<meta property="og:image" content="https://www.borealnet.com.br/assets/images/peca-plating-cromado.jpg">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="assets/images/logo.png" type="image/png">
-<link rel="stylesheet" href="assets/css/style.css">
-<style>
-.process-section{background:#f5faff}
-.process-intro{max-width:850px;margin-bottom:48px}
-.process-intro .section-title{margin-bottom:18px}
-.process-grid-new{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.process-card-new{
-  position:relative;
-  min-height:235px;
-  padding:30px 28px;
-  background:#fff;
-  border:1px solid #d6e9f3;
-  border-top:3px solid #47a8df;
-  overflow:hidden;
-  transition:transform .35s ease,box-shadow .35s ease,background-color .35s ease,border-color .35s ease;
-}
-.process-card-new::after{
-  content:"";position:absolute;width:90px;height:90px;right:-45px;bottom:-45px;border-radius:50%;
-  background:rgba(71,168,223,.08);transition:transform .4s ease;
-}
-.process-card-new:hover{transform:translateY(-9px);background:#e2f1f9;border-color:#47a8df;box-shadow:0 18px 35px rgba(16,24,39,.10)}
-.process-card-new:hover::after{transform:scale(1.8)}
-.process-card-new .num{display:block;margin-bottom:35px;color:#2f4f9e;font-size:.78rem;font-weight:800;letter-spacing:.12em}
-.process-card-new h3{margin:0 0 12px;color:#101827;font-size:1.25rem}
-.process-card-new p{margin:0;color:#53677d;line-height:1.65;font-size:.96rem}
-.plating-showcase{background:#101827;color:#fff;padding:0}
-.plating-showcase-inner{display:grid;grid-template-columns:1.08fr .92fr;min-height:650px}
-.plating-image{position:relative;min-height:650px;overflow:hidden}
-.plating-image img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s ease}
-.plating-showcase:hover .plating-image img{transform:scale(1.025)}
-.plating-copy{padding:78px 65px;display:flex;flex-direction:column;justify-content:center}
-.plating-copy .kicker{color:#47a8df}
-.plating-copy .section-title{color:#fff;max-width:620px;margin-bottom:28px}
-.plating-copy .section-lead{color:#d0dce8;margin-bottom:35px}
-.finish-grid{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid rgba(255,255,255,.65);border-left:1px solid rgba(255,255,255,.65)}
-.finish-item{padding:18px 20px;border-right:1px solid rgba(255,255,255,.65);border-bottom:1px solid rgba(255,255,255,.65);color:#f4f8fb;font-size:.98rem;transition:background-color .25s ease}
-.finish-item:hover{background:rgba(71,168,223,.10)}
-.finishes-section{background:#fff}
-.finishes-layout{display:grid;grid-template-columns:.9fr 1.1fr;min-height:560px;align-items:center;gap:70px}
-.finishes-copy{max-width:560px}
-.finishes-copy .section-title{margin-bottom:22px}
-.finishes-copy .section-lead{margin-bottom:28px}
-.finishes-image{height:520px;overflow:hidden}
-.finishes-image img{width:100%;height:100%;object-fit:cover;display:block}
-.integration-section{background:#eef6fa}
-.integration-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:45px;border-top:1px solid #cbdce6;border-left:1px solid #cbdce6}
-.integration-card{padding:34px 30px;border-right:1px solid #cbdce6;border-bottom:1px solid #cbdce6;background:rgba(255,255,255,.35);transition:transform .3s ease,background-color .3s ease}
-.integration-card:hover{transform:translateY(-5px);background:#fff}
-.integration-card span{display:block;margin-bottom:28px;color:#2f4f9e;font-size:.78rem;font-weight:800;letter-spacing:.12em}
-.integration-card h3{margin:0 0 12px;color:#101827}
-.integration-card p{margin:0;color:#5c7085;line-height:1.6}
-@media(max-width:1100px){
- .process-grid-new{grid-template-columns:repeat(2,1fr)}
- .plating-showcase-inner{grid-template-columns:1fr}
- .plating-image{min-height:460px}
- .finishes-layout{grid-template-columns:1fr}
- .finishes-copy{max-width:800px}
- .finishes-image{height:450px}
-}
-@media(max-width:700px){
- .process-grid-new{grid-template-columns:1fr}
- .process-card-new{min-height:auto}
- .plating-image{min-height:330px}
- .plating-copy{padding:55px 25px}
- .finish-grid{grid-template-columns:1fr}
- .finishes-image{height:340px}
- .integration-grid{grid-template-columns:1fr}
-}
-@media(prefers-reduced-motion:reduce){
- .process-card-new,.process-card-new::after,.plating-image img,.integration-card{transition:none}
-}
-</style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>O Que Fazemos — Boreal Plating</title>
+    <meta
+      name="description"
+      content="Conheça as capacidades industriais da Boreal Plating em fabricação, usinagem e tratamento de superfícies."
+    />
+    <meta name="theme-color" content="#101a2b" />
+    <link
+      rel="alternate"
+      hreflang="pt-BR"
+      href="https://www.borealnet.com.br/o-que-fazemos"
+    />
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://www.borealnet.com.br/en/o-que-fazemos"
+    />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://www.borealnet.com.br/o-que-fazemos"
+    />
+    <link rel="canonical" href="https://www.borealnet.com.br/o-que-fazemos" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Boreal Plating" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content="O Que Fazemos — Boreal Plating" />
+    <meta
+      property="og:description"
+      content="Conheça as capacidades industriais da Boreal Plating em fabricação, usinagem e tratamento de superfícies."
+    />
+    <meta
+      property="og:url"
+      content="https://www.borealnet.com.br/o-que-fazemos"
+    />
+    <meta
+      property="og:image"
+      content="https://www.borealnet.com.br/assets/images/peca-plating-cromado.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="assets/images/logo.png" type="image/png" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -114,126 +68,396 @@
       }
     </script>
   </head>
-<body>
-<header class="site-header" data-header>
-  <div class="header-inner container">
-    <a class="brand" href="/" aria-label="Boreal Plating — Home"><img src="assets/images/logo.png" alt="Boreal Plating"></a>
-    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-menu"><span></span><span></span><span></span></button>
-    <nav id="site-menu" class="site-nav" aria-label="Main navigation">
-      <ul><li><a href="/">Home</a></li><li><a href="/quem-somos">Quem Somos</a></li><li><a class="active" href="/o-que-fazemos" aria-current="page">O Que Fazemos</a></li><li><a href="/ped">P&D</a></li><li><a href="/esg">ESG</a></li><li><a href="/certificacoes">Certificações</a></li><li><a href="/fornecedores">Fornecedores</a></li><li><a href="/contato">Contato</a></li><li><a href="/carreiras">Carreiras</a></li></ul>
-      <div class="nav-tools">
-        <div class="language" aria-label="Language"><a href="/o-que-fazemos" class="active">PT</a><span>/</span><a href="/en/o-que-fazemos">EN</a></div>
-        <a class="social" href="https://www.instagram.com/boreal_plating/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1"></circle></svg></a>
-        <a class="social" href="https://www.linkedin.com/company/boreal-pecas-industriais/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 8.5V18M6.5 6.2v.1M11 18v-5.2a3 3 0 0 1 6 0V18M11 11v7"></path></svg></a>
+  <body>
+    <header class="site-header" data-header>
+      <div class="header-inner container">
+        <a class="brand" href="/" aria-label="Boreal Plating — Home"
+          ><img src="assets/images/logo.png" alt="Boreal Plating"
+        /></a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="site-menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav id="site-menu" class="site-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/quem-somos">Quem Somos</a></li>
+            <li>
+              <a class="active" href="/o-que-fazemos" aria-current="page"
+                >O Que Fazemos</a
+              >
+            </li>
+            <li><a href="/ped">P&D</a></li>
+            <li><a href="/esg">ESG</a></li>
+            <li><a href="/certificacoes">Certificações</a></li>
+            <li><a href="/fornecedores">Fornecedores</a></li>
+            <li><a href="/contato">Contato</a></li>
+            <li><a href="/carreiras">Carreiras</a></li>
+          </ul>
+          <div class="nav-tools">
+            <div class="language" aria-label="Language">
+              <a href="/o-que-fazemos" class="active">PT</a><span>/</span
+              ><a href="/en/o-que-fazemos">EN</a>
+            </div>
+            <a
+              class="social"
+              href="https://www.instagram.com/boreal_plating/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram"
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                <circle cx="12" cy="12" r="4"></circle>
+                <circle cx="17.5" cy="6.5" r="1"></circle></svg
+            ></a>
+            <a
+              class="social"
+              href="https://www.linkedin.com/company/boreal-pecas-industriais/"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn"
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M6.5 8.5V18M6.5 6.2v.1M11 18v-5.2a3 3 0 0 1 6 0V18M11 11v7"
+                ></path></svg
+            ></a>
+          </div>
+        </nav>
       </div>
-    </nav>
-  </div>
-</header>
-<main>
-<section class="inner-hero" style="--hero-image:url('assets/images/peca-plating-cromado.jpg');background-image:linear-gradient(90deg,rgba(9,19,34,.82),rgba(9,19,34,.48)),url('assets/images/peca-plating-cromado.jpg')">
-  <div class="hero-overlay"></div>
-  <div class="container inner-hero-content">
-    <p class="eyebrow">O Que Fazemos</p>
-    <h1>Capacidade industrial integrada.</h1>
-    <p class="hero-subtitle">Da engenharia ao acabamento, com controle de processo.</p>
-  </div>
-</section>
+    </header>
+    <main>
+      <section
+        class="inner-hero"
+        style="--hero-image: url('/assets/images/peca-plating-cromado.jpg')"
+      >
+        <div class="hero-overlay"></div>
+        <div class="container inner-hero-content">
+          <p class="eyebrow">O Que Fazemos</p>
+          <h1>Capacidade industrial integrada.</h1>
+          <p class="hero-subtitle">
+            Da engenharia ao acabamento, com controle de processo.
+          </p>
+        </div>
+      </section>
 
-<section class="section process-section">
-  <div class="container">
-    <div class="process-intro reveal">
-      <p class="kicker">Capacidade produtiva</p>
-      <h2 class="section-title">Processos integrados em cada etapa.</h2>
-      <p class="section-lead">A integração entre fabricação, usinagem, tratamento de superfícies e acabamento permite maior controle técnico ao longo do processo produtivo.</p>
-    </div>
-    <div class="process-grid-new">
-      <article class="process-card-new reveal"><span class="num">01</span><h3>Engenharia</h3><p>Definição e desenvolvimento do processo conforme os requisitos técnicos.</p></article>
-      <article class="process-card-new reveal"><span class="num">02</span><h3>Fabricação / Injeção</h3><p>Produção de componentes metálicos e peças técnicas em polímeros.</p></article>
-      <article class="process-card-new reveal"><span class="num">03</span><h3>Usinagem</h3><p>Produção de peças e componentes com controle dimensional em torno e fresa.</p></article>
-      <article class="process-card-new reveal"><span class="num">04</span><h3>Preparação da superfície</h3><p>Preparação das peças para os processos de tratamento e acabamento.</p></article>
-      <article class="process-card-new reveal"><span class="num">05</span><h3>Tratamento e revestimento</h3><p>Processos de plating e tratamentos de superfície conforme especificação.</p></article>
-      <article class="process-card-new reveal"><span class="num">06</span><h3>Acabamento</h3><p>Aplicação de acabamentos e processos complementares conforme o projeto.</p></article>
-      <article class="process-card-new reveal"><span class="num">07</span><h3>Controle final</h3><p>Inspeção e acompanhamento dos requisitos definidos para cada fornecimento.</p></article>
-      <article class="process-card-new reveal"><span class="num">08</span><h3>Expedição</h3><p>Preparação e envio dos componentes conforme as especificações do cliente.</p></article>
-    </div>
-  </div>
-</section>
+      <section class="section process-section">
+        <div class="container">
+          <div class="process-intro reveal">
+            <p class="kicker">Capacidade produtiva</p>
+            <h2 class="section-title">Processos integrados em cada etapa.</h2>
+            <p class="section-lead">
+              A integração entre fabricação, usinagem, tratamento de superfícies
+              e acabamento permite maior controle técnico ao longo do processo
+              produtivo.
+            </p>
+          </div>
+          <div class="process-grid-new">
+            <article class="process-card-new reveal">
+              <span class="num">01</span>
+              <h3>Engenharia</h3>
+              <p>
+                Definição e desenvolvimento do processo conforme os requisitos
+                técnicos.
+              </p>
+            </article>
+            <article class="process-card-new reveal">
+              <span class="num">02</span>
+              <h3>Fabricação / Injeção</h3>
+              <p>
+                Produção de componentes metálicos e peças técnicas em polímeros.
+              </p>
+            </article>
+            <article class="process-card-new reveal">
+              <span class="num">03</span>
+              <h3>Usinagem</h3>
+              <p>
+                Produção de peças e componentes com controle dimensional em
+                torno e fresa.
+              </p>
+            </article>
+            <article class="process-card-new reveal">
+              <span class="num">04</span>
+              <h3>Preparação da superfície</h3>
+              <p>
+                Preparação das peças para os processos de tratamento e
+                acabamento.
+              </p>
+            </article>
+            <article class="process-card-new reveal">
+              <span class="num">05</span>
+              <h3>Tratamento e revestimento</h3>
+              <p>
+                Processos de plating e tratamentos de superfície conforme
+                especificação.
+              </p>
+            </article>
+            <article class="process-card-new reveal">
+              <span class="num">06</span>
+              <h3>Acabamento</h3>
+              <p>
+                Aplicação de acabamentos e processos complementares conforme o
+                projeto.
+              </p>
+            </article>
+            <article class="process-card-new reveal">
+              <span class="num">07</span>
+              <h3>Controle final</h3>
+              <p>
+                Inspeção e acompanhamento dos requisitos definidos para cada
+                fornecimento.
+              </p>
+            </article>
+            <article class="process-card-new reveal">
+              <span class="num">08</span>
+              <h3>Expedição</h3>
+              <p>
+                Preparação e envio dos componentes conforme as especificações do
+                cliente.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-<section class="plating-showcase">
-  <div class="plating-showcase-inner">
-    <div class="plating-image"><img src="assets/images/amostras-plating.jpg" alt="Amostras de cores e acabamentos de plating da Boreal" loading="lazy"></div>
-    <div class="plating-copy reveal">
-      <p class="kicker">Plating</p>
-      <h2 class="section-title">Variedade de cores e acabamentos.</h2>
-      <p class="section-lead">Diferentes opções de revestimento e acabamento podem ser aplicadas conforme a especificação e os requisitos de cada projeto.</p>
-      <div class="finish-grid">
-        <div class="finish-item">14k Gold</div><div class="finish-item">24k Gold</div>
-        <div class="finish-item">Almond Gold</div><div class="finish-item">Antique Nickel</div>
-        <div class="finish-item">Bronze Dark Aged Antique</div><div class="finish-item">Champagne Gold</div>
-        <div class="finish-item">Chrome</div><div class="finish-item">Copper</div>
-        <div class="finish-item">Crescent Gold</div><div class="finish-item">Nickel</div>
-        <div class="finish-item">Platinum</div><div class="finish-item">Rose Gold</div>
-        <div class="finish-item">Silver</div><div class="finish-item">Smoked Nickel</div>
+      <section class="plating-showcase">
+        <div class="plating-showcase-inner">
+          <div class="plating-image">
+            <img
+              src="assets/images/amostras-plating.jpg"
+              alt="Amostras de cores e acabamentos de plating da Boreal"
+              loading="lazy"
+            />
+          </div>
+          <div class="plating-copy reveal">
+            <p class="kicker">Plating</p>
+            <h2 class="section-title">Variedade de cores e acabamentos.</h2>
+            <p class="section-lead">
+              Diferentes opções de revestimento e acabamento podem ser aplicadas
+              conforme a especificação e os requisitos de cada projeto.
+            </p>
+            <div class="finish-grid">
+              <div class="finish-item">14k Gold</div>
+              <div class="finish-item">24k Gold</div>
+              <div class="finish-item">Almond Gold</div>
+              <div class="finish-item">Antique Nickel</div>
+              <div class="finish-item">Bronze Dark Aged Antique</div>
+              <div class="finish-item">Champagne Gold</div>
+              <div class="finish-item">Chrome</div>
+              <div class="finish-item">Copper</div>
+              <div class="finish-item">Crescent Gold</div>
+              <div class="finish-item">Nickel</div>
+              <div class="finish-item">Platinum</div>
+              <div class="finish-item">Rose Gold</div>
+              <div class="finish-item">Silver</div>
+              <div class="finish-item">Smoked Nickel</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section finishes-section">
+        <div class="container">
+          <div class="finishes-layout">
+            <div class="finishes-copy reveal">
+              <p class="kicker">Anodização e revestimentos</p>
+              <h2 class="section-title">Acabamentos para função e estética.</h2>
+              <p class="section-lead">
+                Anodização em diferentes tonalidades, além de vernizes e
+                pintura, conforme a especificação de cada aplicação.
+              </p>
+              <ul class="quality-list">
+                <li>
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m5 12 4 4L19 6"></path></svg
+                  ><span>Anodização</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m5 12 4 4L19 6"></path></svg
+                  ><span>Vernizes</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m5 12 4 4L19 6"></path></svg
+                  ><span>Pintura industrial</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m5 12 4 4L19 6"></path></svg
+                  ><span>Acabamentos conforme especificação</span>
+                </li>
+              </ul>
+            </div>
+            <div class="finishes-image reveal">
+              <img
+                src="assets/images/peca-plating-cromado.jpg"
+                alt="Peça metálica com acabamento superficial"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section integration-section">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="kicker">Estrutura industrial</p>
+            <h2 class="section-title">
+              Diferentes processos dentro de uma mesma cadeia produtiva.
+            </h2>
+            <p class="section-lead">
+              A Boreal reúne capacidades complementares de fabricação, usinagem,
+              tratamento de superfícies e acabamentos para atender diferentes
+              necessidades industriais.
+            </p>
+          </div>
+          <div class="integration-grid">
+            <article class="integration-card reveal">
+              <span>01</span>
+              <h3>Tratamento de superfícies</h3>
+              <p>
+                Processos de plating e tratamentos para proteção, acabamento e
+                requisitos técnicos de peças metálicas.
+              </p>
+            </article>
+            <article class="integration-card reveal">
+              <span>02</span>
+              <h3>Usinagem de precisão</h3>
+              <p>
+                Produção de peças técnicas e componentes metálicos com controle
+                dimensional.
+              </p>
+            </article>
+            <article class="integration-card reveal">
+              <span>03</span>
+              <h3>Injeção de termoplásticos</h3>
+              <p>
+                Produção de componentes plásticos técnicos para integração com
+                conjuntos industriais.
+              </p>
+            </article>
+            <article class="integration-card reveal">
+              <span>04</span>
+              <h3>Fabricação metálica</h3>
+              <p>
+                Fabricação de componentes conforme especificações, incluindo
+                processos de corte, dobra e solda.
+              </p>
+            </article>
+            <article class="integration-card reveal">
+              <span>05</span>
+              <h3>Acabamentos industriais</h3>
+              <p>
+                Processos complementares de acabamento, pintura, verniz e
+                preparação de superfícies.
+              </p>
+            </article>
+            <article class="integration-card reveal">
+              <span>06</span>
+              <h3>Processos integrados</h3>
+              <p>
+                Combinação de diferentes etapas produtivas conforme os
+                requisitos de cada projeto.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div class="container cta-inner">
+          <div>
+            <h2>Vamos avaliar seu projeto?</h2>
+            <p>
+              Descreva o componente, acabamento ou processo de que você precisa.
+            </p>
+          </div>
+          <a class="btn btn-primary" href="/contato"
+            >Fale com o comercial
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h13M13 6l6 6-6 6"></path></svg
+          ></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <div class="footer-brand">
+          <a href="/"
+            ><img src="assets/images/logo.png" alt="Boreal Plating"
+          /></a>
+          <p>
+            Soluções industriais em tratamento de superfícies, usinagem de
+            precisão e fabricação de componentes.
+          </p>
+          <div class="footer-social">
+            <a
+              href="https://www.instagram.com/boreal_plating/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram"
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                <circle cx="12" cy="12" r="4"></circle>
+                <circle cx="17.5" cy="6.5" r="1"></circle></svg
+            ></a>
+            <a
+              href="https://www.linkedin.com/company/boreal-pecas-industriais/"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn"
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M6.5 8.5V18M6.5 6.2v.1M11 18v-5.2a3 3 0 0 1 6 0V18M11 11v7"
+                ></path></svg
+            ></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Empresa</h3>
+          <ul>
+            <li><a href="/quem-somos">Quem Somos</a></li>
+            <li><a href="/o-que-fazemos">O Que Fazemos</a></li>
+            <li><a href="/ped">P&D</a></li>
+            <li><a href="/esg">ESG</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Padrões</h3>
+          <ul>
+            <li><a href="/certificacoes">Certificações</a></li>
+            <li><a href="/fornecedores">Fornecedores</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Contato</h3>
+          <ul>
+            <li><a href="/contato">Contato</a></li>
+            <li><a href="/carreiras">Carreiras</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-contact">
+          <h3>Joinville / SC</h3>
+          <p>
+            Rua Tuiuti, 3835<br />Aventureiro<br />Joinville — SC<br />CEP
+            89226-001
+          </p>
+          <a href="mailto:contato@borealnet.com.br">contato@borealnet.com.br</a
+          ><a href="tel:+554734199393">+55 (47) 3419-9393</a>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="section finishes-section">
-  <div class="container">
-    <div class="finishes-layout">
-      <div class="finishes-copy reveal">
-        <p class="kicker">Anodização e revestimentos</p>
-        <h2 class="section-title">Acabamentos para função e estética.</h2>
-        <p class="section-lead">Anodização em diferentes tonalidades, além de vernizes e pintura, conforme a especificação de cada aplicação.</p>
-        <ul class="quality-list">
-          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg><span>Anodização</span></li>
-          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg><span>Vernizes</span></li>
-          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg><span>Pintura industrial</span></li>
-          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg><span>Acabamentos conforme especificação</span></li>
-        </ul>
+      <div class="container footer-bottom">
+        <span>© 2026 Boreal Plating · Todos os direitos reservados.</span
+        ><span>Joinville, Santa Catarina, Brasil</span>
       </div>
-      <div class="finishes-image reveal"><img src="assets/images/peca-plating-cromado.jpg" alt="Peça metálica com acabamento superficial" loading="lazy"></div>
-    </div>
-  </div>
-</section>
-
-<section class="section integration-section">
-  <div class="container">
-    <div class="section-head reveal">
-      <p class="kicker">Estrutura industrial</p>
-      <h2 class="section-title">Diferentes processos dentro de uma mesma cadeia produtiva.</h2>
-      <p class="section-lead">A Boreal reúne capacidades complementares de fabricação, usinagem, tratamento de superfícies e acabamentos para atender diferentes necessidades industriais.</p>
-    </div>
-    <div class="integration-grid">
-      <article class="integration-card reveal"><span>01</span><h3>Tratamento de superfícies</h3><p>Processos de plating e tratamentos para proteção, acabamento e requisitos técnicos de peças metálicas.</p></article>
-      <article class="integration-card reveal"><span>02</span><h3>Usinagem de precisão</h3><p>Produção de peças técnicas e componentes metálicos com controle dimensional.</p></article>
-      <article class="integration-card reveal"><span>03</span><h3>Injeção de termoplásticos</h3><p>Produção de componentes plásticos técnicos para integração com conjuntos industriais.</p></article>
-      <article class="integration-card reveal"><span>04</span><h3>Fabricação metálica</h3><p>Fabricação de componentes conforme especificações, incluindo processos de corte, dobra e solda.</p></article>
-      <article class="integration-card reveal"><span>05</span><h3>Acabamentos industriais</h3><p>Processos complementares de acabamento, pintura, verniz e preparação de superfícies.</p></article>
-      <article class="integration-card reveal"><span>06</span><h3>Processos integrados</h3><p>Combinação de diferentes etapas produtivas conforme os requisitos de cada projeto.</p></article>
-    </div>
-  </div>
-</section>
-
-<section class="cta"><div class="container cta-inner"><div><h2>Vamos avaliar seu projeto?</h2><p>Descreva o componente, acabamento ou processo de que você precisa.</p></div><a class="btn btn-primary" href="/contato">Fale com o comercial <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"></path></svg></a></div></section>
-</main>
-
-<footer class="site-footer">
-  <div class="container footer-main">
-    <div class="footer-brand">
-      <a href="/"><img src="assets/images/logo.png" alt="Boreal Plating"></a>
-      <p>Soluções industriais em tratamento de superfícies, usinagem de precisão e fabricação de componentes.</p>
-      <div class="footer-social">
-        <a href="https://www.instagram.com/boreal_plating/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1"></circle></svg></a>
-        <a href="https://www.linkedin.com/company/boreal-pecas-industriais/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 8.5V18M6.5 6.2v.1M11 18v-5.2a3 3 0 0 1 6 0V18M11 11v7"></path></svg></a>
-      </div>
-    </div>
-    <div class="footer-col"><h3>Empresa</h3><ul><li><a href="/quem-somos">Quem Somos</a></li><li><a href="/o-que-fazemos">O Que Fazemos</a></li><li><a href="/ped">P&D</a></li><li><a href="/esg">ESG</a></li></ul></div><div class="footer-col"><h3>Padrões</h3><ul><li><a href="/certificacoes">Certificações</a></li><li><a href="/fornecedores">Fornecedores</a></li></ul></div><div class="footer-col"><h3>Contato</h3><ul><li><a href="/contato">Contato</a></li><li><a href="/carreiras">Carreiras</a></li></ul></div>
-    <div class="footer-col footer-contact"><h3>Joinville / SC</h3><p>Rua Tuiuti, 3835<br>Aventureiro<br>Joinville — SC<br>CEP 89226-001</p><a href="mailto:contato@borealnet.com.br">contato@borealnet.com.br</a><a href="tel:+554734199393">+55 (47) 3419-9393</a></div>
-  </div>
-  <div class="container footer-bottom"><span>© 2026 Boreal Plating · Todos os direitos reservados.</span><span>Joinville, Santa Catarina, Brasil</span></div>
-</footer>
-<script src="assets/js/main.js" defer></script>
-</body>
+    </footer>
+    <script src="assets/js/main.js" defer></script>
+  </body>
 </html>

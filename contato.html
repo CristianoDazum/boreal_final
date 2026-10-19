@@ -74,7 +74,7 @@
         <button
           class="menu-toggle"
           type="button"
-          aria-label="Open menu"
+          aria-label="Abrir menu"
           aria-expanded="false"
           aria-controls="site-menu"
         >
@@ -130,16 +130,7 @@
     <main>
       <section
         class="inner-hero"
-        style="
-          --hero-image: url(&quot;assets/images/fachada-boreal.jpg&quot;);
-          background-image:
-            linear-gradient(
-              90deg,
-              rgba(9, 19, 34, 0.82),
-              rgba(9, 19, 34, 0.48)
-            ),
-            url(&quot;assets/images/fachada-boreal.jpg&quot;);
-        "
+        style="--hero-image: url('/assets/images/fachada-boreal.jpg')"
       >
         <div class="hero-overlay"></div>
         <div class="container inner-hero-content">
@@ -287,15 +278,6 @@
               </div>
               <label
                 class="checkbox-field"
-                style="
-                  display: flex;
-                  gap: 10px;
-                  align-items: flex-start;
-                  margin-top: 18px;
-                  cursor: pointer;
-                  color: var(--muted);
-                  font-size: 0.76rem;
-                "
                 ><input type="checkbox" name="consent" required /><span
                   >Li e concordo com o tratamento dos meus dados para
                   atendimento desta solicitação.</span
@@ -310,14 +292,7 @@
           <p class="kicker">Canais</p>
           <h2 class="section-title">Acompanhe a Boreal.</h2>
           <p class="section-lead">Acesse os canais oficiais disponíveis.</p>
-          <div
-            style="
-              display: flex;
-              justify-content: center;
-              gap: 12px;
-              margin-top: 25px;
-            "
-          >
+          <div class="social-row">
             <a
               class="btn btn-dark"
               target="_blank"

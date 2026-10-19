@@ -74,7 +74,7 @@
         <button
           class="menu-toggle"
           type="button"
-          aria-label="Open menu"
+          aria-label="Abrir menu"
           aria-expanded="false"
           aria-controls="site-menu"
         >
@@ -130,16 +130,7 @@
     <main>
       <section
         class="inner-hero"
-        style="
-          --hero-image: url(&quot;assets/images/engenharia.jpg&quot;);
-          background-image:
-            linear-gradient(
-              90deg,
-              rgba(9, 19, 34, 0.82),
-              rgba(9, 19, 34, 0.48)
-            ),
-            url(&quot;assets/images/engenharia.jpg&quot;);
-        "
+        style="--hero-image: url('/assets/images/engenharia.jpg')"
       >
         <div class="hero-overlay"></div>
         <div class="container inner-hero-content">
@@ -228,7 +219,7 @@
               Conheça o canal de candidatura para quem deseja participar de
               oportunidades profissionais na Boreal.
             </p>
-            <div style="margin-top: 35px">
+            <div class="subsection">
               <h3>Conheça oportunidades</h3>
               <p class="section-lead">
                 Se você deseja fazer parte da Boreal, envie sua candidatura com
@@ -293,15 +284,6 @@
               </div>
               <label
                 class="checkbox-field"
-                style="
-                  display: flex;
-                  gap: 10px;
-                  align-items: flex-start;
-                  margin-top: 18px;
-                  cursor: pointer;
-                  color: var(--muted);
-                  font-size: 0.76rem;
-                "
                 ><input type="checkbox" name="consent" required /><span
                   >Li e concordo com o tratamento dos meus dados para
                   atendimento desta solicitação.</span
