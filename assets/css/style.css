@@ -330,15 +330,19 @@ button {
 }
 
 .language a {
-  color: rgba(255, 255, 255, 0.8);
-  opacity: 1;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  text-underline-offset: 3px;
   transition: color 0.2s ease;
 }
 
-.language a.active,
 .language a:hover {
   color: #fff;
-  opacity: 1;
+}
+
+.language a.active {
+  color: #fff;
+  text-decoration: underline;
 }
 
 .language span {
@@ -1020,6 +1024,16 @@ button {
   border-radius: 50%;
   display: grid;
   place-items: center;
+  color: #91a0b3;
+  transition:
+    color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.footer-social a:hover,
+.footer-social a:focus-visible {
+  color: #fff;
+  border-color: var(--sky);
 }
 
 .footer-col h3 {
