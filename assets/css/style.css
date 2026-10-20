@@ -2063,6 +2063,12 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  /* O gradiente só é pintado dentro da caixa do elemento. Com line-height
+     reduzido e letter-spacing negativo, as curvas do "S" e do "G" ficavam
+     fora dela e apareciam cortadas. O padding amplia a área pintada e a
+     margem negativa equivalente mantém a posição original das letras. */
+  padding: 0.08em 0.12em 0.06em 0;
+  margin: -0.08em -0.12em -0.06em 0;
 }
 
 .section-signature-esg .esg-word span {
